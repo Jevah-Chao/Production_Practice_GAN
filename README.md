@@ -32,6 +32,9 @@ ___
 ### 1. Show final program
   eg. `python realtime.py`
   > 需要先解压`checkpoint.zip`放在和`realtime.py`放在同一目录下。  
+  > 由于一直git不成功就放百度yun上了
+  > 链接：https://pan.baidu.com/s/1SjbiKouBMTttKzRJWpVVog 
+  > 提取码：ckpt
   > 直接运行调用的是文件读写的展示方式，调用函数write_file()即使用`JanpanStreet.jpg`生成结果`Gan_resultH.png`并通过matplot显示效果。  
   > 如果想要修改其他图片，读取的文件只能是jpg格式，在realtime.py的函数write_file()中修改变量imgpath即可。    
   > 如果想要使用摄像头的实时画面风格迁移在realtime.py的main函数中调用start_capture()即可。  
