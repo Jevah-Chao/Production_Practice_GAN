@@ -32,18 +32,27 @@ def get_gan(frame, size, style="S"):
     return res_bgr
 
 def write_file():
-    imgpath = 'E:/OpenCV-work/zj.jpg'
+    imgpath = "JapanStreet.jpg"
     frame = cv2.imread(imgpath)
     img = cv2.imread(imgpath)
     
     frame = get_gan(frame, size=(480, 218), style="H")
     
-    plt.imshow(frame)
-    plt.show()
-    plt.imshow(img)
+    img_bgr = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    frame_bgr = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+    
+    plt.figure()
+    title1 = "AnimeGAN Generated"
+    plt.subplot(1, 2, 1)
+    plt.imshow(frame_bgr)
+    plt.title(title1)
+    title2 = "Origin"
+    plt.subplot(1, 2, 2)
+    plt.imshow(img_bgr)
+    plt.title(title2)
     plt.show()
     
-    cv2.imwrite('E:\OpenCV-work\Gan_result7H.png', frame)
+    cv2.imwrite('Gan_resultH.png', frame)
 
 def start_capture():
      cap = cv2.VideoCapture(0)
