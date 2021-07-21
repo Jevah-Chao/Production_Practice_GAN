@@ -31,7 +31,7 @@ ___
 ## Usage 
 ### 1. Show final program
   eg. `python realtime.py`
-  > 需要先解压`checkpoint.zip`放在和`realtime.py`放在同一目录下。  
+  > 需要先解压`checkpoint.zip`和`realtime.py`放在同一目录下。  
   > 由于一直git不成功就放百度yun上了
   > 链接：https://pan.baidu.com/s/1SjbiKouBMTttKzRJWpVVog 
   > 提取码：ckpt  
