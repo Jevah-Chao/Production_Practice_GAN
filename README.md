@@ -31,11 +31,13 @@ ___
 ## Usage 
 ### 1. Show final program
   eg. `python realtime.py`
-  > 需要先解压`checkpoint.zip`放在和`realtime.py`放在同一目录下。
-  > 直接运行调用的是文件读写的展示方式，即使用`JanpanStreet.jpg`生成结果`Gan_resultH.png`并通过matplot显示效果。
-  > 如果想要修改其他图片，读取的文件只能是jpg格式，在realtime.py的函数write_file()中修改变量imgpath即可。
-  > 各项依赖文件完整后运行会显示`[*] Success to read AnimeGAN.model-60`等待图片处理完成后显示效果即可。
-  > 没有文件夹`checkpoint`会报错`[*] Failed to find a checkpoint`
+  > 需要先解压`checkpoint.zip`放在和`realtime.py`放在同一目录下。  
+  > 直接运行调用的是文件读写的展示方式，即使用`JanpanStreet.jpg`生成结果`Gan_resultH.png`并通过matplot显示效果。  
+  > 如果想要修改其他图片，读取的文件只能是jpg格式，在realtime.py的函数write_file()中修改变量imgpath即可。  
+  > 各项依赖文件完整后运行会显示`[*] Success to read AnimeGAN.model-60`等待图片处理完成后显示效果即可。  
+  > 没有文件夹`checkpoint`会报错`[*] Failed to find a checkpoint`。  
+  ![](ProgramRes.png)
+  
 ### 2. Download vgg19 or Pretrained model  
 > [vgg19.npy](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/vgg16%2F19.npy)  
   
